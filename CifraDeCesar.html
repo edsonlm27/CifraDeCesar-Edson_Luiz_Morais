@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifra de César</title>
+    <style>
+        .linha {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- - Desenvolva um programa que permita a entrada de um texto em um <textarea>. 
+         - Abaixo do textarea deve haver 2 radio buttons para permitir que o usuário escolha 
+            entre texto cifrado e decifrado.
+         - Ao lado dos radio buttons deve haver um campo input que permita ao usuário que informe a cifra. 
+         - A cifra tem apenas 1 digito e pode ser numérica ou alfabética. Caso o usuário informe um 
+            caractere alfabético, a cifra será a posição do respectivo caractere dentro do alfabeto, por 
+            exemplo, "a" = 1, "b" = 2, "c" = 3 e assim por diante.
+    -->
+
+    <form action="">
+        <fieldset>
+            <legend>Cifra De César</legend>
+            <textarea name="" id="" cols="30" rows="10" class="linha" placeholder="Digite aqui o texto"></textarea>
+            <input type="radio" name="nmCodif" id="idCifrado" checked>
+            <label for="idCifrado">Cifrado</label>
+            <input type="radio" name="nmCodif" id="idDecifrado">
+            <label for="idDecifrado">Decifrado</label>
+            <label for="idCifra">Cifra:</label>
+            <input type="text" name="nmCifra" id="idCifra" placeholder="1 dígito, numérico/alfanumérico" required>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
