@@ -24,15 +24,33 @@
     <form action="">
         <fieldset>
             <legend>Cifra De César</legend>
-            <textarea name="" id="" cols="30" rows="10" class="linha" placeholder="Digite aqui o texto"></textarea>
+            <textarea name="nmTexto" id="idTexto" cols="30" rows="10" class="linha" placeholder="Digite aqui o texto"></textarea>
             <input type="radio" name="nmCodif" id="idCifrado" checked>
             <label for="idCifrado">Cifrado</label>
             <input type="radio" name="nmCodif" id="idDecifrado">
             <label for="idDecifrado">Decifrado</label>
             <label for="idCifra">Cifra:</label>
             <input type="text" name="nmCifra" id="idCifra" placeholder="1 dígito, numérico/alfanumérico" required>
+            <input type="button" value="Executar" onclick="cifrarDecifrar()" class="linha">
+            <output id="idOut"></output>
         </fieldset>
     </form>
-    
+
+    <script>
+        var executa
+        var cifrado
+        var decifrado
+        var cifra
+
+        function cifrarDecifrar() {
+            executa = document.getElementById("idTexto").value
+            console.log("Texto capturado: " + executa);
+            cifrado = document.getElementById("idCifrado").checked
+            decifrado = document.getElementById("idDecifrado").checked
+            console.log("Cifrado: " + cifrado + " Decifrado: " + decifrado);
+            cifra = document.getElementById("idCifra").value
+            console.log("Cifra digitada: " + cifra);
+        }
+    </script>
 </body>
 </html>
